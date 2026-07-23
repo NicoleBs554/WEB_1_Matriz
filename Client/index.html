@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Matrices</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Calculadora de Matrices</h1>
+
+        <div class="operations">
+            <button data-op="add">Suma</button>
+            <button data-op="subtract">Resta</button>
+            <button data-op="multiply">Multiplicación</button>
+            <button data-op="dot">Producto Punto</button>
+            <button data-op="cross">Producto Cruz (Hadamard)</button>
+            <button data-op="scalar">Multiplicar por escalar</button>
+            <button data-op="inverse">Inversa</button>
+            <button data-op="transpose">Traspuesta</button>
+        </div>
+
+        <div class="matrix-controls">
+            <div class="matrix-panel">
+                <h2>Matriz A</h2>
+                <div>
+                    <button id="decreaseA">-</button>
+                    <span id="sizeA">3</span>
+                    <button id="increaseA">+</button>
+                    <button id="randomA">Aleatorio</button>
+                </div>
+                <div id="matrixA" class="matrix-grid"></div>
+            </div>
+            <div class="matrix-panel">
+                <h2>Matriz B</h2>
+                <div>
+                    <button id="decreaseB">-</button>
+                    <span id="sizeB">3</span>
+                    <button id="increaseB">+</button>
+                    <button id="randomB">Aleatorio</button>
+                </div>
+                <div id="matrixB" class="matrix-grid"></div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="calculateBtn">Calcular</button>
+            <button id="swapBtn">Intercambiar A y B</button>
+            <button id="clearBtn">Limpiar</button>
+        </div>
+
+        <div class="result">
+            <h2>Resultado</h2>
+            <div id="resultGrid" class="matrix-grid"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
 
-app.use('/', matrixRoutes);
+app.use('/', matrixRoute);
 
 // Middleware para rutas no encontradas
 app.use((req, res) => {
